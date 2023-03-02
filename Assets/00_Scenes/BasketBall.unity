@@ -1942,6 +1942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1228588919}
+  animator: {fileID: 1228588920}
   player: {fileID: 124125052}
 --- !u!195 &1228588919
 NavMeshAgent:
@@ -1965,6 +1966,12 @@ NavMeshAgent:
   m_BaseOffset: 0.38
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1228588920 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5ee1d0790c7731e47b0aa6e11bc5af94,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859451451}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1252638899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3123,8 +3130,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443313150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8041995, y: -2.5008004, z: 0.4053883}
-  m_LocalScale: {x: 0.49963206, y: 1, z: 1.4152921}
+  m_LocalPosition: {x: 2.86, y: -2.53, z: 0.4053883}
+  m_LocalScale: {x: 0.65, y: 1, z: 1.4152921}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 655239515}
@@ -3138,10 +3145,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443313150}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1443313153
@@ -3151,7 +3158,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443313150}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3163,8 +3170,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13664,6 +13670,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 5ee1d0790c7731e47b0aa6e11bc5af94,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 5ee1d0790c7731e47b0aa6e11bc5af94,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3452073018112649694, guid: 5ee1d0790c7731e47b0aa6e11bc5af94,
         type: 3}
       propertyPath: m_Layer
@@ -15654,6 +15670,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 5ee1d0790c7731e47b0aa6e11bc5af94,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7408bb179f23c5643b9bd4974ad92c3f, type: 2}
     - target: {fileID: 5880952977054245162, guid: 5ee1d0790c7731e47b0aa6e11bc5af94,
         type: 3}
       propertyPath: m_Layer
