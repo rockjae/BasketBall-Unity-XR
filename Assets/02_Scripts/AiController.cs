@@ -38,11 +38,15 @@ public class AiController : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        shouldFollow = true;
+        if (other.tag == "Front")
+        {
+            shouldFollow = true;
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        ret = true;
+        if(other.tag == "Front")
+            ret = true;
     }
 }
