@@ -10,7 +10,7 @@ public class TeleportSceneChanger : MonoBehaviour
     {
         if (scoringscript.Points >= 5)
         {
-            if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 1)
+            if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
