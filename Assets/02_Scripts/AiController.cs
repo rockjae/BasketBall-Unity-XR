@@ -9,40 +9,28 @@ public class AiController : MonoBehaviour
     public Animator animator;
     public GameObject player;
 
-    private bool shouldFollow = false;
-    private bool ret = false;
-
-    private Transform startPos;
+    Vector3 startPos;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        startPos = agent.transform;
+        startPos = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (shouldFollow)
+        if (player.transform.localPosition.z < 10.32756)
         {
             agent.SetDestination(player.transform.position);
             animator.SetFloat("Speed", agent.velocity.magnitude);
         }
-        else if (ret)
+        else
         {
-            agent.SetDestination(player.transform.position);
+            agent.SetDestination(startPos);
             animator.SetFloat("Speed", agent.velocity.magnitude);
         }
     }
 
-    void OnTriggerStay(Collider other)
-    {
-        shouldFollow = true;
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        ret = true;
-    }
 }
