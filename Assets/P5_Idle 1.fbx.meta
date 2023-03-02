@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eafac1298ec2ffa4490ca01015589af9
+guid: f6fe96076deb0f3499b64834b41d8806
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -37,7 +37,7 @@ ModelImporter:
       takeName: animStack
       internalID: 2619540402416036911
       firstFrame: 0
-      lastFrame: 16
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -126,7 +126,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0

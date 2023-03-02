@@ -9,7 +9,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 2619540402416036911, guid: 5ee1d0790c7731e47b0aa6e11bc5af94,
+    m_Motion: {fileID: 2619540402416036911, guid: c585ace611c6aab4da9a5f95ff72fc31,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -18,7 +18,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 2619540402416036911, guid: c75700c324a932f4f85422abf216da45,
+    m_Motion: {fileID: 2619540402416036911, guid: 942f3bf5002374f45b6eccdb5ee7b755,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -65,7 +65,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AIAnimator
+  m_Name: P3Animator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -73,7 +73,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
