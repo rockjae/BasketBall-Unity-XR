@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/00_Scenes/Scenes/MainMenu.unity
     guid: 49f94bdd40babda469865e76d8509703
   - enabled: 1
     path: Assets/00_Scenes/BasketBall Teleportation Level 1.unity
