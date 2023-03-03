@@ -12,7 +12,11 @@ public class TeleportSceneChanger : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
             {
-               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            {
+                SceneManager.LoadScene(0);
             }
         }
     }
