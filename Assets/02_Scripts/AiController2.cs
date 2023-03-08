@@ -21,9 +21,7 @@ public class AiController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(player.transform.position);
-        animator.SetFloat("Speed", agent.velocity.magnitude);
-        /*if (player.transform.localPosition.z > 10.32756 && player.transform.localPosition.z < 15.77759)
+        if (player.transform.localPosition.z > 10.32756 && player.transform.localPosition.z < 15.77759)
         {
             agent.SetDestination(player.transform.position);
             animator.SetFloat("Speed", agent.velocity.magnitude);
@@ -32,7 +30,7 @@ public class AiController2 : MonoBehaviour
         {
             agent.SetDestination(startPos);
             animator.SetFloat("Speed", agent.velocity.magnitude);
-        }*/
+        }
     }
 
 }

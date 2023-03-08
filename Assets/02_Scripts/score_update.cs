@@ -6,7 +6,9 @@ using TMPro;
 public class score_update : MonoBehaviour
 {
     public Scoring scoring;
-    public TextMeshProUGUI Scoretm;
+    public TextMeshProUGUI ScoreUnits;
+    public TextMeshProUGUI ScoreTens;
+    private int Units, Tens;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,9 @@ public class score_update : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scoretm.text = scoring.Points.ToString();
+        Units = scoring.Points % 10;
+        Tens = scoring.Points / 10;
+        ScoreUnits.text = Units.ToString();
+        ScoreTens.text = Tens.ToString();
     }
 }

@@ -6,9 +6,7 @@ public class Scoring : MonoBehaviour
 {
     public int Points = 0;
     public TopTrigger triggerTop;
-    public AudioSource Score;
-    public AudioSource Cheer;
-
+    public PracticeSounds PS;
 
     private void OnTriggerExit(Collider other)
     {
@@ -16,8 +14,7 @@ public class Scoring : MonoBehaviour
         {
             Points++;
             triggerTop.BallEnter = false;
-            Score.Play();
-            Cheer.Play();
+            PS.PlayCheer();
         }
     }
 }
