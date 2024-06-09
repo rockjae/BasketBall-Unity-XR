@@ -8,13 +8,34 @@ public class Scoring : MonoBehaviour
     public TopTrigger triggerTop;
     public PracticeSounds PS;
 
+    AudioSource audioSource;
+    public AudioClip[] audioClips;
+    public BasketBallManager basketBallManager;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if(triggerTop.BallEnter == true)
         {
-            Points++;
+            if (basketBallManager.isLastTime)
+            {
+                Points += 3;
+                audioSource.clip = audioClips[1];
+                audioSource.Play();
+            }
+            else
+            {
+                Points += 2;
+                audioSource.clip = audioClips[0];
+                audioSource.Play();
+            }
             triggerTop.BallEnter = false;
             PS.PlayCheer();
+
         }
     }
 }

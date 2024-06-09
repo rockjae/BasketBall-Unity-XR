@@ -8,6 +8,7 @@ public class score_update : MonoBehaviour
     public Scoring scoring;
     public TextMeshProUGUI ScoreUnits;
     public TextMeshProUGUI ScoreTens;
+    //public TextMeshProUGUI ScoreHundreds;
     private int Units, Tens;
     // Start is called before the first frame update
     void Start()

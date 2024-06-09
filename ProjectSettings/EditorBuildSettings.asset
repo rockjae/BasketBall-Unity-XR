@@ -6,20 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/00_Scenes/MainMenu.unity
-    guid: 49f94bdd40babda469865e76d8509703
-  - enabled: 1
-    path: Assets/00_Scenes/BasketBall Teleportation Level 1.unity
-    guid: e1f22b454f95c9149af7ed4dfd543299
-  - enabled: 1
-    path: Assets/00_Scenes/BasketBall Teleportation Level 2.unity
-    guid: 42563d94c8de7304aa023d6376911815
-  - enabled: 1
-    path: Assets/00_Scenes/BasketBall Teleportation Level 3.unity
-    guid: 58232c9ab3421134ebac37685a302a24
-  - enabled: 1
-    path: Assets/00_Scenes/BasketBall.unity
-    guid: 851ad16df1c629d49954022571c819fc
+    path: Assets/00_Scenes/BasketBall_Arcade.unity
+    guid: fa90a402b2aeccd42acbba63cf6299d6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
